@@ -6,17 +6,27 @@
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        table{
-            width: 100%;
+        #parent{
+            width: 500px;
 	        height: 100%; 
 	        border: 1px solid black;
 	        
         }
         #second{
             height: 50%;
+			width: 100%;
             border:1px solid black;
         }
         #first{
+			width: 100%;
+            border:1px solid black;
+        }
+		#forth{
+			width: 100%;
+            border:1px solid black;
+        }
+		#third{
+			width: 100%;
             border:1px solid black;
         }
         td,th{
@@ -26,7 +36,7 @@
     </style>
   </head>
   <body>
-    <table>
+    <table id="parent">
       <!-- Your code here -->
 		<tbody>
 			<tr>
@@ -60,9 +70,9 @@
 							<tr>
 								<td>
 									<ul>
-										<li>List item</li>
-										<li>List item</li>
-										<li>List item</li>
+										<li>List item 1</li>
+										<li>List item 2</li>
+										<li>List item 3</li>
 									</ul>
 								</td>
 							</tr>
@@ -72,7 +82,7 @@
 			</tr>
 			<tr style="height:100px;">
 				<td>
-					<table style="height:50px;">
+					<table id="third"style="height:50px;">
 						<thead>
 							<tr><th colspan="2">Nested Table 3</th></tr>
 						</thead>
@@ -85,7 +95,7 @@
 					</table>
 				</td>
 				<td>
-					<table style="height:50%">
+					<table id="forth" style="height:50%">
 						<thead>
 							<tr><th>Nested Table 4</th></tr>
 						</thead>
